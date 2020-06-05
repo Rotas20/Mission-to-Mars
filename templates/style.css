@@ -1,0 +1,28 @@
+
+.hemisphere_img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px; 
+  }
+  
+  h1 {
+    /* Put a 15-pixel margin at the bottom of the heading. */
+    margin-bottom: 15px;
+    /* Change the size of your font to 60 pixels high. */
+    font-size: 35px;
+    /* This will color the heading font white. */
+    color: white;
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    text-align: left;
+    /* Underline the text. */
+    
+    /* The background of the heading element will now be black. */
+    background-color: rgb(121, 121, 121);
+  }
+

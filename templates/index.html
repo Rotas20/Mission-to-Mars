@@ -1,0 +1,107 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/darkly/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+  <!-- Scraping Button -->
+  <div class="container-fluid">
+
+
+    <header class="header">
+      <h1>Mission to Mars</h1>
+      <a href="/scrape" role="button" class="btn btn-secondary btn-lg">Scrape Data</a>
+    </header>  
+        
+    
+  
+      <!-- mars  featured image  -->
+      <!-- #check in Jupyter
+      #clear db?
+      #add print statments see below  -->
+    <div class="row" style="text-align: center;">
+      <div class="col-md-12">
+        <div>
+          <h3> Featured Mars Image</h3>
+          <img src= "{{mars.MarsImage}}" style="max-height: 1000px; max-width: 1000px; border-style: hidden;">
+        </div>
+      </div>
+    </div>
+     
+<!-- Mars twitter weather update -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 35rem; border-style: groove;">
+        <h2 class="card-title"> Weather on Mars </h2>
+          <p> {{mars.MarsWeather}} <p>
+        </div>
+    </div> 
+  </div>
+    
+    
+    <!-- Mars News  --> 
+  
+   <div class="row" id="">
+        <div class="col-md-12">
+          <h2> Latest Mars News</h2>
+          <h3> {{mars.MarsNewsTitle}} </h3>
+          <h4>{{mars.MarsNewsParagraph}}</h4>
+        </div>
+   </div>
+  
+
+    <div class="row">
+        <div class="col-md-12">
+          <table class="table table-striped">
+            <h2> Mars Facts </h2>
+               {{mars.MarsFacts|safe}}
+          </table>
+
+       </div>
+      </div>
+
+
+      <div class="row">
+        <article>
+          <h2> Mars Hemisphere Images</h2>
+            <div class="col-md-6">
+                <h3> {{mars.MarsHemispheres[0].title}}</h3>
+                <img src= "{{mars.MarsHemispheres[0].img_url}}" alt="text" style="height: 500px; width: 500px;">
+            </div>
+            <div class="col-md-6">
+              <h3> {{mars.MarsHemispheres[1].title}}</h3>
+              <img src= "{{mars.MarsHemispheres[1].img_url}}" alt="text" style="height: 500px; width: 500px;">
+            </div>
+            <div class="col-md-6">
+              <h3> {{mars.MarsHemispheres[2].title}}</h3>
+              <img src= "{{mars.MarsHemispheres[2].img_url}}" alt="text" style="height: 500px; width: 500px;">
+            </div>
+            <div class="col-md-6">
+              <h3> {{mars.MarsHemispheres[3].title}}</h3>
+              <img src= "{{mars.MarsHemispheres[3].img_url}}" alt="text" style="height: 500px; width: 500px;">
+            </div>
+          </article>
+       </div>
+      
+
+   
+
+
+
+       
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/darkly/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
