@@ -8,28 +8,28 @@ Scraped data is stored in MongoDB and rendered through Flask templating to displ
 
 Initial scraping code is written in Jupyter Notebook using BeautifulSoup, Pandas, and Requests/Splinter.
 
-Sources scraped:
+### Sources scraped:
 
-### NASA Mars News scraped with Python*
+NASA Mars News scraped with Python
 
-* [NASA Mars News Site](https://mars.nasa.gov/news/) 
+*https://mars.nasa.gov/news/
 
 
-### JPL Mars Space Images - Featured Image scraped with Splinter
+JPL Mars Space Images - Featured Image scraped with Splinter
 
-*  (https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars).
+*  https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars
 
-### Mars Weather scraped from Twitter with Regular Expression Patterns
+Mars Weather scraped from Twitter with Regular Expression Patterns
 
-* (https://twitter.com/marswxreport?lang=en) 
+* https://twitter.com/marswxreport?lang=en
 
-### Mars Facts scraped with Pandas
+Mars Facts scraped with Pandas
 
-* (https://space-facts.com/mars/) 
+* https://space-facts.com/mars/
 
-### Mars Hemispheres scraped with Python
+Mars Hemispheres scraped with Python
 
-* USGS Astrogeology site (https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) 
+* https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
 
 
